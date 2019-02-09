@@ -1,0 +1,27 @@
+{
+  "kryten-webhook": "<webhook URI for start/stop notification and resub command>",
+  "twitch": {
+    "secret":      "<client secret for Twitch app>",
+    "client-id":   "<client ID for Twitch app>",
+    "webhook_uri": "<uri for Twitch to call>",
+    "app-token":   "<app-token for calls to Twitch API requiring authorization>"
+  },
+  "discord": {
+    "client-id":        "<Discord app/bot client ID>",
+    "server":           "<Discord server to listen to>",
+    "token":            "<Discord bot token>",
+    "config_channels":  [ <array of names of channels where config commands will work> ],
+    "chat_channel_in":  "<name for 'chat as bot channel'>",
+    "chat_channel_out": "<chanel for output when chatting as the bot>",
+    "channels": {
+       "_default_":         "<default stream announcement channel>",
+       "<twitch username>": "<channel for specific announcement of that user>"
+    },
+    "extensions": "<module to load with extension commands>"
+  },
+  "trello": {
+    "key":       "Trello API key",
+    "token":     "Trello API token",
+    "idea-list": "list ID on which to add cards"
+  }
+}
